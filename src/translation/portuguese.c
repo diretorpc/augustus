@@ -44,7 +44,7 @@ static translation_string all_strings[] = {
     {TR_CONFIG_DISPLAY_SCALE, "Escala de exibição:"},
     {TR_CONFIG_CURSOR_SCALE, "Escala do cursor:"},
     {TR_CONFIG_USE_COLOR_CURSORS, "Usar cursores coloridos"},
-    {TR_CONFIG_AUDIO, "Opções de Áudio"},
+    {TR_CONFIG_AUDIO, "Opções de Áudionovo"},
     {TR_CONFIG_VOLUME, "Volume"},
     {TR_CONFIG_ENABLE_AUDIO, "Ativar áudio"},
     {TR_CONFIG_MUSIC, "Ativar núsica"},
