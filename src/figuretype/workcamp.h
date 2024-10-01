@@ -3,7 +3,7 @@
 
 #include "figure/figure.h"
 
-#define CARTLOADS_PER_MONUMENT_DELIVERY 4
+#define CARTLOADS_PER_MONUMENT_DELIVERY 10
 
 void figure_workcamp_worker_action(figure *f);
 
