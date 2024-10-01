@@ -168,7 +168,7 @@ void figure_shipwreck_action(figure *f)
 static int fishing_boat_percentage_speed(void)
 {
     if (building_monument_working(BUILDING_LIGHTHOUSE)) {
-        return 10;
+        return 50;
     }
     return 0;
 }
