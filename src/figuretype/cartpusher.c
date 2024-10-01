@@ -297,7 +297,7 @@ static int cartpusher_percentage_speed(figure *f)
     int src_building_type = src_building->type;
     if (src_building_type >= BUILDING_WHEAT_FARM && src_building_type <= BUILDING_PIG_FARM) {
         if (building_monument_working(BUILDING_GRAND_TEMPLE_CERES)) {
-            return 50;
+            return 100;
         }
     }
     return 0;
