@@ -359,7 +359,7 @@ void figure_cartpusher_action(figure *f)
             break;
         case FIGURE_ACTION_21_CARTPUSHER_DELIVERING_TO_WAREHOUSE:
             set_cart_graphic(f, 1);
-            figure_movement_move_ticks_with_percentage(f, 1, percentage_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, percentage_speed);
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
                 f->action_state = FIGURE_ACTION_24_CARTPUSHER_AT_WAREHOUSE;
                 f->wait_ticks = 0;
@@ -379,7 +379,7 @@ void figure_cartpusher_action(figure *f)
             break;
         case FIGURE_ACTION_22_CARTPUSHER_DELIVERING_TO_GRANARY:
             set_cart_graphic(f, 1);
-            figure_movement_move_ticks_with_percentage(f, 1, percentage_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, percentage_speed);
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
                 f->action_state = FIGURE_ACTION_25_CARTPUSHER_AT_GRANARY;
                 f->wait_ticks = 0;
@@ -400,7 +400,7 @@ void figure_cartpusher_action(figure *f)
             break;
         case FIGURE_ACTION_23_CARTPUSHER_DELIVERING_TO_WORKSHOP:
             set_cart_graphic(f, 1);
-            figure_movement_move_ticks_with_percentage(f, 1, percentage_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, percentage_speed);
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
                 f->action_state = FIGURE_ACTION_26_CARTPUSHER_AT_WORKSHOP;
                 f->wait_ticks = 0;
@@ -419,7 +419,7 @@ void figure_cartpusher_action(figure *f)
                 f->wait_ticks = 0;
             }
             set_cart_graphic(f, 1);
-            figure_movement_move_ticks_with_percentage(f, 1, percentage_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, percentage_speed);
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
                 f->action_state = FIGURE_ACTION_247_CARTPUSHER_AT_MONUMENT;
                 f->wait_ticks = 0;
