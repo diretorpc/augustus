@@ -45,7 +45,7 @@
 static int trader_bonus_speed(void)
 {
     if (building_monument_working(BUILDING_GRAND_TEMPLE_MERCURY)) {
-        return 80;
+        return 100;
     } else {
         return 0;
     }
