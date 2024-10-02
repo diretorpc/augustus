@@ -547,7 +547,7 @@ void figure_trade_caravan_action(figure *f)
             f->image_offset = 0;
             break;
         case FIGURE_ACTION_103_TRADE_CARAVAN_LEAVING:
-            figure_movement_move_ticks_with_percentage(f, 1, move_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, move_speed);
             switch (f->direction) {
                 case DIR_FIGURE_AT_DESTINATION:
                     f->action_state = FIGURE_ACTION_100_TRADE_CARAVAN_CREATED;
