@@ -588,7 +588,7 @@ void figure_trade_caravan_donkey_action(figure *f)
         } else if (leader->type != FIGURE_TRADE_CARAVAN && leader->type != FIGURE_TRADE_CARAVAN_DONKEY) {
             f->state = FIGURE_STATE_DEAD;
         } else {
-            figure_movement_follow_ticks_with_percentage(f, 1, move_speed);
+            figure_movement_follow_ticks_with_percentage(f, 5, move_speed);
         }
     }
 
@@ -792,7 +792,7 @@ void figure_trade_ship_action(figure *f)
             f->image_offset = 0;
             break;
         case FIGURE_ACTION_113_TRADE_SHIP_GOING_TO_DOCK_QUEUE:
-            figure_movement_move_ticks_with_percentage(f, 1, move_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, move_speed);
             f->height_adjusted_ticks = 0;
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
                 f->wait_ticks = 0;
@@ -888,7 +888,7 @@ void figure_trade_ship_action(figure *f)
             f->image_offset = 0;
             break;
         case FIGURE_ACTION_111_TRADE_SHIP_GOING_TO_DOCK:
-            figure_movement_move_ticks_with_percentage(f, 1, move_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, move_speed);
             f->height_adjusted_ticks = 0;
             f->trade_ship_failed_dock_attempts = 0;
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
