@@ -20,7 +20,7 @@
 #include "map/routing.h"
 #include "map/routing_terrain.h"
 
-#define DEPOT_CART_PUSHER_SPEED 20
+#define DEPOT_CART_PUSHER_SPEED 8
 
 #define DEPOT_CART_PUSHER_FOOD_CAPACITY 20
 #define DEPOT_CART_PUSHER_OTHER_CAPACITY 10
