@@ -55,7 +55,7 @@ static int trader_bonus_speed(void)
 static int sea_trader_bonus_speed(void)
 {
     if (building_monument_working(BUILDING_GRAND_TEMPLE_NEPTUNE)) {
-        return 80;
+        return 120;
     } else {
         return 0;
     }
