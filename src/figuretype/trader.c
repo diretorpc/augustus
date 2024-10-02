@@ -946,7 +946,7 @@ void figure_trade_ship_action(figure *f)
             city_message_reset_category_count(MESSAGE_CAT_BLOCKED_DOCK);
             break;
         case FIGURE_ACTION_115_TRADE_SHIP_LEAVING:
-            figure_movement_move_ticks_with_percentage(f, 1, move_speed);
+            figure_movement_move_ticks_with_percentage(f, 5, move_speed);
             f->destination_building_id = 0;
             f->height_adjusted_ticks = 0;
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
