@@ -66,9 +66,9 @@ int trade_route_legacy_increase_limit(int route_id, resource_type resource)
 {
     route_resource *route = array_item(routes, route_id);
     switch (route->limit[resource]) {
-        case 0: route->limit[resource] = 15; break;
-        case 15: route->limit[resource] = 25; break;
-        case 25: route->limit[resource] = 40; break;
+        case 0: route->limit[resource] = 100; break;
+        case 100: route->limit[resource] = 200; break;
+        case 200: route->limit[resource] = 400; break;
     }
     return route->limit[resource];
 }
@@ -77,9 +77,9 @@ int trade_route_legacy_decrease_limit(int route_id, resource_type resource)
 {
     route_resource *route = array_item(routes, route_id);
     switch (route->limit[resource]) {
-        case 40: route->limit[resource] = 25; break;
-        case 25: route->limit[resource] = 15; break;
-        case 15: route->limit[resource] = 0; break;
+        case 400: route->limit[resource] = 200; break;
+        case 200: route->limit[resource] = 100; break;
+        case 100: route->limit[resource] = 0; break;
     }
     return route->limit[resource];
 }
