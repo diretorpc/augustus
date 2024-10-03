@@ -5,7 +5,7 @@
 #include "empire/type.h"
 #include "game/resource.h"
 
-#define EMPIRE_CITY_MAX_TRADERS 5
+#define EMPIRE_CITY_MAX_TRADERS 3
 
 typedef struct {
     int in_use;
