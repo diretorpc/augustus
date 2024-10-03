@@ -169,11 +169,11 @@ void empire_object_load(buffer *buf, int version)
                 int resource_flag = 1 << r;
                 int amount = 0;
                 if (trade40 & resource_flag) {
-                    amount = 200;
+                    amount = 40;
                 } else if (trade25 & resource_flag) {
-                    amount = 150;
+                    amount = 25;
                 } else if (trade15 & resource_flag) {
-                    amount = 100;
+                    amount = 15;
                 } else if (full->city_type == EMPIRE_CITY_OURS) {
                     // our city is special and won't actually have an amount for goods it sells, so we set it to 1
                     amount = 1;
