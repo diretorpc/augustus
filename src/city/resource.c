@@ -53,7 +53,7 @@ int city_resource_get_amount_including_granaries(resource_type resource, int amo
     }
     int amount_stored = city_data.resource.stored_in_warehouses[resource];
     if (amount_stored < amount && resource_is_food(resource)) {
-        amount_stored += city_data.resource.granary_food_stored[resource] / 100;
+        amount_stored += city_data.resource.granary_food_stored[resource] / 300;
         if (checked_granaries) {
             *checked_granaries = 1;
         }
