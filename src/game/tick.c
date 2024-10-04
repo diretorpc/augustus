@@ -70,7 +70,6 @@ static void advance_year(void)
     scenario_empire_process_expansion();
     city_population_request_yearly_update();
     city_finance_handle_year_change();
-    empire_city_reset_yearly_trade_amounts();
     building_maintenance_update_fire_direction();
     city_ratings_update(1,0);
 }
@@ -80,6 +79,7 @@ static void advance_month(void)
     int new_year = 0;
     city_migration_reset_newcomers();
     city_health_update();
+    empire_city_reset_yearly_trade_amounts();
     scenario_random_event_process();
     city_finance_handle_month_change();
     city_resource_consume_food();
