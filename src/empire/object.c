@@ -163,7 +163,7 @@ void empire_object_load(buffer *buf, int version)
         obj->invasion_years = buffer_read_u8(buf);
         if (version <= SCENARIO_LAST_UNVERSIONED) {
             int trade40 = buffer_read_u16(buf);
-            int trade25 = buffer_read_u16(buf);
+            int trade250 = buffer_read_u16(buf);
             int trade15 = buffer_read_u16(buf);
             for (int r = RESOURCE_MIN; r < RESOURCE_MAX_LEGACY; r++) {
                 int resource_flag = 1 << r;
