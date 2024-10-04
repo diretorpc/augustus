@@ -18,7 +18,7 @@
 #include "sound/effect.h"
 
 #define MAX_GRANARIES 100
-#define UNITS_PER_LOAD 100
+#define UNITS_PER_LOAD 300
 #define CURSE_LOADS 16
 #define INFINITE 10000
 
