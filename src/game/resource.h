@@ -66,7 +66,7 @@ typedef enum {
 } resource_type;
 
 #define LEGACY_INVENTORY_MAX 8
-#define RESOURCE_ONE_LOAD 300
+#define RESOURCE_ONE_LOAD 200
 
 #define RESOURCE_SUPPLY_CHAIN_MAX_SIZE 10
 
