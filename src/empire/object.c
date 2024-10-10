@@ -171,7 +171,7 @@ void empire_object_load(buffer *buf, int version)
                 if (trade40 & resource_flag) {
                     amount = 40;
                 } else if (trade25 & resource_flag) {
-                    amount = 30;
+                    amount = 25;
                 } else if (trade15 & resource_flag) {
                     amount = 15;
                 } else if (full->city_type == EMPIRE_CITY_OURS) {
