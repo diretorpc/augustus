@@ -163,7 +163,7 @@ void empire_object_load(buffer *buf, int version)
         obj->invasion_years = buffer_read_u8(buf);
         if (version <= SCENARIO_LAST_UNVERSIONED) {
             int trade40 = buffer_read_u16(buf);
-            int trade250 = buffer_read_u16(buf);
+            int trade25 = buffer_read_u16(buf);
             int trade15 = buffer_read_u16(buf);
             for (int r = RESOURCE_MIN; r < RESOURCE_MAX_LEGACY; r++) {
                 int resource_flag = 1 << r;
@@ -171,7 +171,7 @@ void empire_object_load(buffer *buf, int version)
                 if (trade40 & resource_flag) {
                     amount = 40;
                 } else if (trade25 & resource_flag) {
-                    amount = 25;
+                    amount = 30;
                 } else if (trade15 & resource_flag) {
                     amount = 15;
                 } else if (full->city_type == EMPIRE_CITY_OURS) {
