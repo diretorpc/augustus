@@ -453,7 +453,7 @@ void figure_market_trader_action(figure *f)
     }
     figure_image_increase_offset(f, 12);
 
-    roamer_action(f, 1);
+    roamer_action(f, 2);
     figure_image_update(f, image_group(GROUP_FIGURE_MARKET_LADY));
 }
 
