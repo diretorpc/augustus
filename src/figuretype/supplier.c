@@ -245,7 +245,7 @@ void figure_supplier_action(figure *f)
             figure_combat_handle_corpse(f);
             break;
         case FIGURE_ACTION_145_SUPPLIER_GOING_TO_STORAGE:
-            figure_movement_move_ticks(f, 1);
+            figure_movement_move_ticks(f, 2);
             if (f->direction == DIR_FIGURE_AT_DESTINATION) {
                 f->wait_ticks = 0;
                 f->previous_tile_x = f->x;
@@ -282,7 +282,7 @@ void figure_supplier_action(figure *f)
             }
             break;
         case FIGURE_ACTION_146_SUPPLIER_RETURNING:
-            figure_movement_move_ticks(f, 1);
+            figure_movement_move_ticks(f, 2);
             if (f->direction == DIR_FIGURE_AT_DESTINATION || f->direction == DIR_FIGURE_LOST) {
                 if (f->direction == DIR_FIGURE_AT_DESTINATION && f->type == FIGURE_LIGHTHOUSE_SUPPLIER) {
                     building_get(f->building_id)->resources[RESOURCE_TIMBER] += 100;
